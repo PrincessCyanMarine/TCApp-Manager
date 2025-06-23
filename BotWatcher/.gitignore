@@ -1,0 +1,4 @@
+node_modules/*
+TriviumComicsBots/*
+dist/*
+.env
