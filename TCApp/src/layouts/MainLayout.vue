@@ -42,8 +42,8 @@
         <q-spinner size="64px" />
       </div>
       <router-view v-else-if="user" />
-      <div v-else class="full-width q-mt-lg row justify-center">
-        <q-btn label="login" @click="redirectToOauth" />
+      <div v-else class="full-width q-mt-lg row justify-center items-center q-px-md" style="height: 80vh;">
+        <q-btn label="login" class="full-width" color="primary" @click="redirectToOauth" />
       </div>
     </q-page-container>
   </q-layout>

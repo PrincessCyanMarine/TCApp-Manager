@@ -23,7 +23,7 @@
           @click="goToCommandActivation"
         />
       </div>
-      <CommandUsageReport class="q-mb-sm full-width" :guildId="id" />
+      <CommandUsageReport class="q-px-md q-mb-sm full-width" :guildId="id" />
       <MessageReport class="q-mx-md full-width" :guildId="id" />
       <div v-if="isAdmin">
         <q-select
@@ -58,7 +58,9 @@
             </q-list>
           </template>
         </q-select>
-        <q-btn label="Save moderator roles" class="q-ml-md" @click="saveModeratorRoles" />
+        <div class="q-px-md">
+          <q-btn label="Save moderator roles" color="positive" class="full-width" @click="saveModeratorRoles" />
+        </div>
       </div>
     </div>
   </div>

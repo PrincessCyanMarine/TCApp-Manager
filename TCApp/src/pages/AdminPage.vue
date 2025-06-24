@@ -1,13 +1,18 @@
 <template>
   <q-page class="row items-center justify-evenly">
     <q-btn label="Back" @click="goBack()" class="back-button" />
-    <div class="full-width q-mt-lg column items-center" style="gap: 8px">
-      <q-btn label="Commands" @click="goToCommandActivation" />
-      <CommandUsageReport />
-      <q-btn v-if="!status" label="Turn On" @click="turnOn" color="primary" />
-      <div v-else class="full-width row justify-center" style="gap: 8px">
-          <q-btn label="Turn Off" @click="turnOff" color="red" />
-          <q-btn label="Restart" @click="restart" />
+    <div class="q-px-md full-width q-mt-lg column items-center" style="gap: 8px">
+      <q-btn 
+        label="Activate/Deactivate Commands"
+        color="negative"
+        class="full-width"
+        @click="goToCommandActivation"
+      />
+      <CommandUsageReport class="full-width" />
+      <q-btn v-if="!status" class="full-width" label="Turn On" @click="turnOn" color="primary" />
+      <div v-else class="full-width row justify-between" style="gap: 8px">
+          <q-btn label="Turn Off"  @click="turnOff" color="red" style="width: 48%;"/>
+          <q-btn label="Restart" @click="restart" style="width: 48%;" />
       </div>
     </div>
   </q-page>

@@ -1,6 +1,6 @@
 <template>
   <div v-if="show">
-    <div class="full-width text-center q-px-md">
+    <div class="full-width text-center">
       <div v-if="!commandUsageReport" class="q-mt-md q-ml-md">No command usage data available</div>
       <q-btn
         v-else
@@ -75,6 +75,7 @@ const store = useDiscord();
 export default {
   watch: {
     guildId: function () {
+      this.commandUsageReport = null;
       this.getCommandUsageReport();
     },
   },

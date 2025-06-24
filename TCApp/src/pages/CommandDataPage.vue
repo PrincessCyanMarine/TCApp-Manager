@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="row full-width justify-around" style="gap: 16px">
-          <q-btn @click="getCommandData" style="width: 45%">Cancel</q-btn>
+          <q-btn @click="getCommandData" style="width: 45%" color="negative">Cancel</q-btn>
           <q-btn @click="saveCommandData" style="width: 45%" color="primary">Save</q-btn>
         </div>
       </div>

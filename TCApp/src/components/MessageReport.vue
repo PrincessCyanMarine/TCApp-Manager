@@ -33,7 +33,7 @@
           class="back-button"
           style="z-index: 999"
         />
-        <div class="absolute" style="top: 0; left: 0; right: 0; bottom: 0; z-index: 9">
+        <div class="absolute bg-white" style="top: 0; left: 0; right: 0; bottom: 0; z-index: 9; height: calc(100vh - 75px)">
           <template v-if="messageReport">
             <q-virtual-scroll
               :items="Object.entries(messageReport)"
@@ -76,6 +76,7 @@ import { getMessageReport } from 'src/utils/websocket';
 export default {
   watch: {
     guildId: function () {
+      this.messageReport = null;
       this.getMessageReport();
     },
   },

@@ -4,6 +4,8 @@ import { useDiscord } from 'src/stores/discord';
 import { isGuildAdmin } from './permissions';
 import type { CommandData, Guild, Role, User } from './types';
 
+const SERVER_IP = process.env.PUBLIC_SERVER_IP;
+
 declare global {
   interface Window {
     socket: Socket;
@@ -90,7 +92,7 @@ export function setGuildModeratorRoles(guildId: string, moderatorRoles: Role[]) 
 
 export function initializeSocket(code: string) {
   console.debug(`initializing socket with code ${code}`);
-  const watcherSocket = io('ws://192.168.18.28:4001', {
+  const watcherSocket = io(`ws://${SERVER_IP}:4001`, {
     auth: { code },
   });
   watcherSocket.on('user', (user: string | User) => {
@@ -103,9 +105,11 @@ export function initializeSocket(code: string) {
   });
   window.watcherSocket = watcherSocket;
 
-  const socket = io('ws://192.168.18.28:4000', {
+  const socket = io(`ws://${SERVER_IP}:4000`, {
     auth: { code },
   });
+  socket.on('connect', () => { store.setStatus(true); });
+  socket.on('disconnect', () => { store.setStatus(false); });
   socket.on('guilds', (guilds: string | Guild[]) => {
     console.debug('guilds', typeof guilds);
     if (typeof guilds === 'string') guilds = JSON.parse(guilds) as Guild[];
