@@ -6,11 +6,11 @@ Ao abrir o app, haverá um botão de "LOGIN" que te redirecionará ao Discord
 
 Após realizar o login, você será levado à tela incial, que haverá certas informações do usuário, um botão de logout e, para admins, um botão para acessar o painel de admin
 
-<video controls src="videos/login.mp4" title="Title"></video>
+<video controls src="https://github.com/PrincessCyanMarine/TCApp-Manager/raw/refs/heads/master/videos/login.mp4" title="Title"></video>
 
 ### Comparação entre tela inicial para admin e para um usuário normal
 
-<video controls src="videos/admin1.mp4" title="Title"></video>
+<video controls src="https://github.com/PrincessCyanMarine/TCApp-Manager/raw/refs/heads/master/videos/admin1.mp4" title="Title"></video>
 
 ## Moderação de servidores
 
@@ -18,13 +18,13 @@ Usuários com a permissão de "Administrador" em um servidor são tambem como ad
 
 Administradores de um servidor podem configurar roles que serão reconhecidos como moderador
 
-<video controls src="videos/moderators.mp4" title="Title"></video>
+<video controls src="https://github.com/PrincessCyanMarine/TCApp-Manager/raw/refs/heads/master/videos/moderators.mp4" title="Title"></video>
 
 ## Ligar/Desligar/Reiniciar
 
 Admins podem ligar, desligar ou reiniciar os bots a partir do menu de admin
 
-<video controls src="videos/turnon_off_restart.mp4" title="Title"></video>
+<video controls src="https://github.com/PrincessCyanMarine/TCApp-Manager/raw/refs/heads/master/videos/turnon_off_restart.mp4" title="Title"></video>
 
 
 ## Ativação/Bloqueio de comandos por servidor/geral
@@ -33,7 +33,7 @@ Comandos podem ser ativados/desativados por servidor pelos admins ou moderadores
 
 Comandos desativados no sistema como um todo têm sua ativação bloqueada na configuração por servidor
 
-<video controls src="videos/command_activation.mp4" title="Title"></video>
+<video controls src="https://github.com/PrincessCyanMarine/TCApp-Manager/raw/refs/heads/master/videos/command_activation.mp4" title="Title"></video>
 
 ## Uso de comandos
 
@@ -41,21 +41,21 @@ Admins e moderadores de servidores podem ver quantas vezes cada comando foi usad
 
 Admins do sistema podem ver quantas vezes cada comando foi usado no total em todos os servidores
 
-<video controls src="videos/commandusage.mp4" title="Title"></video>
+<video controls src="https://github.com/PrincessCyanMarine/TCApp-Manager/raw/refs/heads/master/videos/commandusage.mp4" title="Title"></video>
 
 
 ## Rank de mensagens
 
 Qualquer membro de um servidor pode ver quantas mensagens cada membro do servidor enviou (a partir da adição dos bots ao servidor)
 
-<video controls src="videos/messageranking.mp4" title="Title"></video>
+<video controls src="https://github.com/PrincessCyanMarine/TCApp-Manager/raw/refs/heads/master/videos/messageranking.mp4" title="Title"></video>
 
 
 ## Card customization
 
 Qualquer usuario pode customizar a aparencia do comando "!card" a partir do aplicativo
 
-<video controls src="videos/2025-06-24 16-31-21.mp4" title="Title"></video>
+<video controls src="https://github.com/PrincessCyanMarine/TCApp-Manager/raw/refs/heads/master/videos/2025-06-24 16-31-21.mp4" title="Title"></video>
 
 
 # Guia de desenvolvedor
