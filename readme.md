@@ -92,9 +92,9 @@ PUBLIC_SERVER_IP
 ```
 CLIENT_ID é o Client ID do bot que realizará o gerenciamento do login, pode ser encontrado na aba de OAuth do bot
 
-REDIRECT_URI é o mesmo configurado para os bots
-
 PUBLIC_SERVER_IP é o IP do computador no qual os bots e o BotWatcher estão rodando
+
+REDIRECT_URI é o mesmo configurado no Oauth2 dos bots, normalmente `http://[o ip configurado em PUBLIC_SERVER_IP]:9000/`
 
 
 Para rodar o app, entre na pasta TCApp e rode `npm run dev`
@@ -104,5 +104,7 @@ Para que as funções de desligar/ligar/reiniciar os bots funcione, [os bots pre
 Para rodar BotWatcher, entre na pasta do mesmo nome e rode `node .`
 
 
-## Como desenvolver
+## Desenvolvimento
 O aplicativo utiliza a configuração padrão do [Quasar](https://quasar.dev/) e somente requer conhecimento basico em [Vue](https://quasar.dev/start/how-to-use-vue)
+
+[Documentação dos bots](https://github.com/PrincessCyanMarine/TriviumComicsBots)
